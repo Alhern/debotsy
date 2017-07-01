@@ -71,6 +71,7 @@ const adj2 = adjective.choice();
 const greet = greetings.choice();
 const comp = comparisons.choice();
 
+const stream = T.stream('user');
 
 stream.on('follow', (event) => {
 	const name = event.source.name;
