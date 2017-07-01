@@ -1,5 +1,4 @@
 const Twit = require('twit');
-const config = require('./config');
 const fs = require('fs');
 const adjective = require('./strings/adjectives.js');
 const greetings = require('./strings/greetings.js');
@@ -78,7 +77,6 @@ const stream = T.stream('user')
 stream.on('follow', (event) => {
 	const name = event.source.name;
 	const screenName = event.source.screen_name;
-	// tweetThis(`${greet} @${screenName} is ${adj1}, ${adj2}, and ${comp}.`);
 
 const adj1 = adjective.choice();
 const adj2 = adjective.choice();
@@ -94,19 +92,6 @@ const comp = comparisons.choice();
 
 // tweetThisMedia();
 
-// const params = {
-// 	q: "eating Mexican",
-// 	count: 2
-// };
-
-// const getData = (err, data, response) => {
-// 	const tweets = data.statuses;
-// 	for(let i=0 ; i < tweets.length; i++) {
-// 		console.log(tweets[i].text);
-// 	}
-// };
-
-// T.get('search/tweets', params, getData);
 
 
 
