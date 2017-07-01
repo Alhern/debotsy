@@ -4,6 +4,10 @@ module.exports = [
 	'can blow bubbles under the sea',
 	'beat the sun in a staring contest',
 	'can unscramble an egg',
-	'healthier than broccoli',
-	'is made of 100% GMO-free ingredients'
+	'is healthier than broccoli',
+	'is made of 100% GMO-free ingredients',
+	'is fresher than a mango sorbet',
+	'smells better than a fresh croissant',
+	'is wiser than Jaden Smith',
+	'never skips leg day'
 ];
