@@ -6,5 +6,6 @@ module.exports = [
 	'I need to tell you that',
 	'Y\'all didn\'t know but',
 	'Please be aware that',
-	'Hey world,'
+	'Hey world,',
+	'Listen up humans,'
 ];
