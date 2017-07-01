@@ -79,7 +79,7 @@ stream.on('follow', (event) => {
 
 	T.post('statuses/update', {
 		status: `${greet} @${screenName} is ${adj1}, ${adj2}, and ${comp}.`
-	}, (err, data, response) {
+	}, (err, data, response) => {
 		console.log(data)
 	})
 })
