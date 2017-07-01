@@ -66,22 +66,23 @@ Array.prototype.choice = function () {
 	return this[Math.floor(Math.random()*this.length)];
 };
 
-const adj1 = adjective.choice();
-const adj2 = adjective.choice();
-const greet = greetings.choice();
-const comp = comparisons.choice();
 
-const stream = T.stream('user');
+const stream = T.stream('user')
 
 stream.on('follow', (event) => {
 	const name = event.source.name;
 	const screenName = event.source.screen_name;
 	// tweetThis(`${greet} @${screenName} is ${adj1}, ${adj2}, and ${comp}.`);
 
+const adj1 = adjective.choice();
+const adj2 = adjective.choice();
+const greet = greetings.choice();
+const comp = comparisons.choice();
+
 	T.post('statuses/update', {
 		status: `${greet} @${screenName} is ${adj1}, ${adj2}, and ${comp}.`
 	}, (err, data, response) => {
-		console.log(data)
+		console.log('WORKING WOW')
 	})
 })
 
