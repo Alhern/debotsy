@@ -8,9 +8,9 @@ const comparisons = require('./strings/comparisons.js');
 
 //make a new twit object with config
 const T = new Twit({
-  consumer_key:         process.env.process.env.process.env.process.env.CONSUMER_KEY,
-  consumer_secret:      process.env.process.env.process.env.CONSUMER_SECRET,
-  access_token:         process.env.process.env.ACCESS_TOKEN,
+  consumer_key:         process.env.CONSUMER_KEY,
+  consumer_secret:      process.env.CONSUMER_SECRET,
+  access_token:         process.env.ACCESS_TOKEN,
   access_token_secret:  process.env.ACCESS_TOKEN_SECRET, 
 });
 
