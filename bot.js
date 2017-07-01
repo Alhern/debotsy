@@ -3,7 +3,7 @@ const config = require('./config');
 const fs = require('fs');
 
 //make a new twit object with config
-const T = new Twit(config);
+const T = new Twit(config.keys);
 
 function tweetThis() {
 
