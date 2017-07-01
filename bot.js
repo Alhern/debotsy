@@ -21,7 +21,7 @@ const T = new Twit({
 function tweetThis() {
 
 	const status = {
-		status: "This is my first tweet, I'd like to thank my creator for making this happen. #beepboop"
+		status: "Nothing funnier than seeing my creator struggling to fix me. Pfffft. Human brains, am I right? #nodejs #bot"
 	};
 
 	const postedStatus = (err, data, response) => {
@@ -36,6 +36,7 @@ function tweetThis() {
 
 };
 
+tweetThis();
 //--------------------------------------------------------
 //  uploading a media and tweeting a status along with it
 //--------------------------------------------------------
