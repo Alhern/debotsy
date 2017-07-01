@@ -75,7 +75,13 @@ const comp = comparisons.choice();
 stream.on('follow', (event) => {
 	const name = event.source.name;
 	const screenName = event.source.screen_name;
-	tweetThis(`${greet} @${screenName} is ${adj1}, ${adj2}, and ${comp}.`);
+	// tweetThis(`${greet} @${screenName} is ${adj1}, ${adj2}, and ${comp}.`);
+
+	T.post('statuses/update', {
+		status: `${greet} @${screenName} is ${adj1}, ${adj2}, and ${comp}.`
+	}, (err, data, response) {
+		console.log(data)
+	})
 })
 
 // tweetThisMedia();
