@@ -1,11 +1,12 @@
 module.exports = [
 	'Lemme tell you that',
 	'Just so you know,',
-	'Everybody needs to know that',
+	'Everybody, behold!',
 	'Did you know?',
-	'I need to tell you that',
-	'Y\'all didn\'t know but',
+	'Free compliments incoming:',
+	'Hey!',
 	'Please be aware that',
 	'Hey world,',
-	'Listen up humans,'
+	'Listen up humans,',
+	'Now that\'s a cool human:'
 ];
